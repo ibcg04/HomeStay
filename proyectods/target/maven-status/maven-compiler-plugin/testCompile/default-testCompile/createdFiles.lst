@@ -1,0 +1,16 @@
+modelo/UnidadTest.class
+logica/HuespedManagerTest.class
+modelo/ReseñaTest.class
+notificaciones/MensajeriaTest.class
+logica/AnfitrionManagerTest.class
+notificaciones/EmailTest.class
+modelo/PropiedadTest.class
+modelo/ModeradorTest.class
+modelo/HuespedTest.class
+notificaciones/SmsTest.class
+modelo/AnfitrionTest.class
+util/EntradaUtilsTest.class
+logica/BuscadorPropiedadesTest.class
+logica/BuscadorPropiedadesTest$1.class
+modelo/SoporteLegalTest.class
+modelo/ReporteTest.class

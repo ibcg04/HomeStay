@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: modelo.ReporteTest
+Test set: modelo.HuespedTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in modelo.ReporteTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in modelo.HuespedTest
