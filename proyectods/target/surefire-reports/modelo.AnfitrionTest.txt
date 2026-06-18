@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: modelo.AnfitrionTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s -- in modelo.AnfitrionTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in modelo.AnfitrionTest

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="modelo.PropiedadTest" time="0.018" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="modelo.PropiedadTest" time="0.022" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/temurin-17-jdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/Tarea02/Tarea02/proyectods/target/surefire/surefirebooter-20260618165546444_3.jar /home/runner/work/Tarea02/Tarea02/proyectods/target/surefire 2026-06-18T16-55-45_929-jvmRun1 surefire-20260618165546444_1tmp surefire_0-20260618165546444_2tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/Tarea02/Tarea02/proyectods/target/surefire/surefirebooter-20260618165633518_3.jar /home/runner/work/Tarea02/Tarea02/proyectods/target/surefire 2026-06-18T16-56-33_425-jvmRun1 surefire-20260618165633518_1tmp surefire_0-20260618165633518_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/Tarea02/Tarea02/proyectods/target/test-classes:/home/runner/work/Tarea02/Tarea02/proyectods/target/classes:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/Tarea02/Tarea02/proyectods/target/surefire/surefirebooter-20260618165546444_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/Tarea02/Tarea02/proyectods/target/surefire/surefirebooter-20260618165633518_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.19+10"/>
     <property name="user.name" value="runner"/>
@@ -53,7 +53,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testMostrarUnidades" classname="modelo.PropiedadTest" time="0.012">
+  <testcase name="testMostrarUnidades" classname="modelo.PropiedadTest" time="0.015">
     <system-out><![CDATA[Unidad agregada a la propiedad.
 Unidad agregada a la propiedad.
 Unidades disponibles:
@@ -61,7 +61,7 @@ Unidades disponibles:
 1.- Unidad: precio $0.0, estado: null, ocupante: Ninguno
 ]]></system-out>
   </testcase>
-  <testcase name="testAgregarReseña" classname="modelo.PropiedadTest" time="0.001">
+  <testcase name="testAgregarReseña" classname="modelo.PropiedadTest" time="0.0">
     <system-out><![CDATA[Reseña agregada a la propiedad.
 ]]></system-out>
   </testcase>
@@ -73,7 +73,7 @@ Unidades disponibles:
     <system-out><![CDATA[[ADVERTENCIA] Unidad nula. No se agrega a la propiedad.
 ]]></system-out>
   </testcase>
-  <testcase name="testAgregarReseñaNula" classname="modelo.PropiedadTest" time="0.001">
+  <testcase name="testAgregarReseñaNula" classname="modelo.PropiedadTest" time="0.002">
     <system-out><![CDATA[[ADVERTENCIA] Reseña nula. No se agrega a la propiedad.
 ]]></system-out>
   </testcase>
