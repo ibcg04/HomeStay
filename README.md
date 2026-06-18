@@ -11,10 +11,10 @@ El código está organizado con separación por capas:
 - `ec.edu.espol`: punto de entrada y menús principales.
 
 ## Estructura principal
-- `/home/runner/work/Tarea02/Tarea02/proyectods/pom.xml`: configuración Maven (Java 17 + JUnit 5).
-- `/home/runner/work/Tarea02/Tarea02/proyectods/src/main/java`: código fuente.
-- `/home/runner/work/Tarea02/Tarea02/proyectods/src/test/java`: pruebas unitarias.
-- `/home/runner/work/Tarea02/Tarea02/proyectods/docker-compose.yml`: entorno de SonarQube + PostgreSQL.
+- `proyectods/pom.xml`: configuración Maven (Java 17 + JUnit 5).
+- `proyectods/src/main/java`: código fuente.
+- `proyectods/src/test/java`: pruebas unitarias.
+- `proyectods/docker-compose.yml`: entorno de SonarQube + PostgreSQL.
 
 ## Funcionalidades implementadas
 - Registro e inicio de sesión por rol (`Huesped` y `Anfitrion`).
@@ -36,7 +36,7 @@ El código está organizado con separación por capas:
 Desde el módulo Maven:
 
 ```bash
-cd /home/runner/work/Tarea02/Tarea02/proyectods
+cd proyectods
 mvn clean compile
 mvn exec:java -Dexec.mainClass="ec.edu.espol.Main"
 ```
@@ -45,7 +45,7 @@ mvn exec:java -Dexec.mainClass="ec.edu.espol.Main"
 
 ## Cómo ejecutar pruebas
 ```bash
-cd /home/runner/work/Tarea02/Tarea02/proyectods
+cd proyectods
 mvn test
 ```
 
@@ -55,7 +55,7 @@ Resultado verificado en este repositorio: **70 tests**, **0 fallos**, **0 errore
 El repositorio incluye `docker-compose.yml` para levantar SonarQube local con PostgreSQL.
 
 ```bash
-cd /home/runner/work/Tarea02/Tarea02/proyectods
+cd proyectods
 docker compose up -d
 ```
 
