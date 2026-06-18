@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: util.EntradaUtilsTest
+Test set: modelo.PropiedadTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s -- in util.EntradaUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s -- in modelo.PropiedadTest
