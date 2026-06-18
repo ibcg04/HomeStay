@@ -1,4 +1,4 @@
-#HomeStay (Proyecto Java)
+# HomeStay (Proyecto Java)
 
 ## Descripción
 Este repositorio contiene una aplicación de consola en Java que modela un sistema tipo *marketplace* de alojamiento (anfitriones, huéspedes, propiedades, unidades, reservas, reseñas e incidentes).
