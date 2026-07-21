@@ -1,8 +1,14 @@
 package ec.edu.espol;
+import ec.edu.espol.ui.HomeStayGUI;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        if (args.length == 0 || !"--console".equalsIgnoreCase(args[0])) {
+            HomeStayGUI.mostrar();
+            return;
+        }
         gestionarAplicacion();
     }
 
