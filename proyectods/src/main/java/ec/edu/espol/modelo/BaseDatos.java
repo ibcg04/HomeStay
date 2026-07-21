@@ -3,6 +3,7 @@ package ec.edu.espol.modelo;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class BaseDatos {
     private HashMap<Integer, Anfitrion> anfitriones;
@@ -35,6 +36,80 @@ public class BaseDatos {
 
     public void agregarHuesped(Huesped huesped) {
         huespedes.put(huesped.getID(), huesped);
+    }
+
+    public void inicializarDatosDemo() {
+        if (!anfitriones.isEmpty()) {
+            return;
+        }
+
+        Anfitrion ana = new Anfitrion("Ana Torres", 1);
+        Anfitrion mario = new Anfitrion("Mario Cedeño", 2);
+        Anfitrion sofia = new Anfitrion("Sofia Andrade", 3);
+
+        agregarAnfitrion(ana);
+        agregarAnfitrion(mario);
+        agregarAnfitrion(sofia);
+
+        ana.agregarPropiedad(crearPropiedad(
+                "Salinas",
+                ana,
+                List.of(Servicio.WiFi, Servicio.Piscina, Servicio.Estacionamiento),
+                crearUnidad("Departamento", 85),
+                crearUnidad("Habitacion", 42)
+        ));
+        ana.agregarPropiedad(crearPropiedad(
+                "Guayaquil",
+                ana,
+                List.of(Servicio.WiFi, Servicio.PetFriendly),
+                crearUnidad("Casa", 120),
+                crearUnidad("Habitacion", 35)
+        ));
+        mario.agregarPropiedad(crearPropiedad(
+                "Cuenca",
+                mario,
+                List.of(Servicio.WiFi, Servicio.Estacionamiento),
+                crearUnidad("Departamento", 70),
+                crearUnidad("Casa", 150)
+        ));
+        sofia.agregarPropiedad(crearPropiedad(
+                "Quito",
+                sofia,
+                List.of(Servicio.PetFriendly, Servicio.WiFi),
+                crearUnidad("Habitacion", 48),
+                crearUnidad("Departamento", 95)
+        ));
+        sofia.agregarPropiedad(crearPropiedad(
+                "Manta",
+                sofia,
+                List.of(Servicio.Piscina, Servicio.Estacionamiento),
+                crearUnidad("Casa", 180),
+                crearUnidad("Departamento", 110)
+        ));
+    }
+
+    private Propiedad crearPropiedad(String ubicacion, Anfitrion propietario, List<Servicio> servicios, Unidad... unidades) {
+        Propiedad propiedad = new Propiedad(ubicacion, new ArrayList<>(), propietario, new ArrayList<>());
+        propiedad.setServicios(new ArrayList<>(servicios));
+        for (Unidad unidad : unidades) {
+            unidad.setPropiedad(propiedad);
+            propiedad.agregarUnidad(unidad);
+        }
+        return propiedad;
+    }
+
+    private Unidad crearUnidad(String tipo, double precio) {
+        Unidad unidad;
+        if ("Casa".equals(tipo)) {
+            unidad = new Casa();
+        } else if ("Departamento".equals(tipo)) {
+            unidad = new DepartamentoCompleto();
+        } else {
+            unidad = new HabitacionPrivada();
+        }
+        unidad.setPrecio(precio);
+        unidad.setEstadoAlojamiento(EstadoAlojamiento.DISPONIBLE);
+        return unidad;
     }
 
     public void mostrarAnfitriones() {

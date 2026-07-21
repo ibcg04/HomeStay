@@ -11,7 +11,7 @@ El código está organizado con separación por capas:
 - `ec.edu.espol`: punto de entrada y menús principales.
 
 ## Estructura principal
-- `proyectods/pom.xml`: configuración Maven (Java 17 + JUnit 5).
+- `proyectods/pom.xml`: configuración Maven (Java 25 + JUnit 5).
 - `proyectods/src/main/java`: código fuente.
 - `proyectods/src/test/java`: pruebas unitarias.
 - `proyectods/docker-compose.yml`: entorno de SonarQube + PostgreSQL.
@@ -29,8 +29,8 @@ El código está organizado con separación por capas:
 - Reporte de incidentes con resolución encadenada (`Anfitrion -> Moderador -> SoporteLegal`).
 
 ## Requisitos
-- JDK 17
-- Maven 3.8+
+- JDK 25
+- Maven 3.9+
 
 ## Cómo ejecutar
 Desde el módulo Maven:
@@ -60,3 +60,10 @@ docker compose up -d
 ```
 
 Luego se puede ejecutar el análisis Maven Sonar desde el mismo módulo.
+
+## Interfaz Grafica
+```bash
+cd proyectods
+java -cp target\classes ec.edu.espol.Main
+```
+
